@@ -4,20 +4,10 @@ import (
 	"log"
 	"net"
 	"time"
-	"string"
 )
 
-func getMyIP() string{
-    allIPs,err:=net.InterfaceAddrs()
-    if err!=nil{
-        log.Println("IP receiving errors!\n")
-        return ""
-    }
-    return strings.Split(allIPs[1].String(),"/")[0]
-}
-
 func broadcastUdp(addr string) {
-	udpAddr, err := net.ResolveUDPAddr("udp", addr)
+	udpAddr, err := net.ResolveUDPAddr("udp", addr) 	
 	if err != nil {
 		log.Fatal(err)
 	}
