@@ -1,0 +1,3 @@
+Communicationsmodule, things to do:
+1. Find out how to get the IP address at the machine (Ethernet address).
+2. Remove IP's from list if they haven't answered in a specified amount of time.3. ??
