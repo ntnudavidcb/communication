@@ -73,9 +73,19 @@ func main() {
 	ipListChannel := make(chan []string, 1)
 
 	port := ":20060"
+<<<<<<< HEAD
 
+=======
+	//broadcastAddr := "129.241.187.255:20010"
+
+	//go broadcastUdp(broadcastAddr)
+>>>>>>> 874fd07cd4beb43de6347e5d813e7c28821d9e12
 	go listenUdp(port, ipListChannel)
 
 	log.Println(<-ipListChannel)
 	<-doneChannel
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 874fd07cd4beb43de6347e5d813e7c28821d9e12
